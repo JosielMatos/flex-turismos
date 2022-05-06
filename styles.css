@@ -10,16 +10,21 @@ ul {
   display: flex;
 }
 
-ul li + li {
-  margin-left: 1.25rem;
-}
-
 a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 header {
   background-color: #122A57;
+  padding: 0 1.25rem;
+}
+
+header ul li + li {
+  margin-left: 1.25rem;
 }
 
 .heading {
@@ -40,6 +45,7 @@ header {
 .container {
   max-width: 992px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .hero {
@@ -70,4 +76,62 @@ h1 {
   height: 28rem;
   display: flex;
   align-items: center;
+}
+
+.description img {
+  min-width: 31.25rem;
+}
+
+#quem-somos {
+  color: #122A57;
+}
+
+#quem-somos h2 {
+  font-size: 2rem;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+#quem-somos h2::before {
+  content: "";
+  height: 3rem;
+  width: 0.25rem;
+  margin-right: 0.5rem;
+  background-color: #122A57;
+}
+
+#quem-somos p + p {
+  margin-top: 1.25rem;
+}
+
+.services {
+  padding: 2.5rem 0;
+  background-color: #122A57;
+  color: white;
+}
+
+.services h2 {
+  font-size: 2rem;
+  padding: 0;
+}
+
+.services img {
+  max-width: 10rem;
+}
+
+.services-list {
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.services-list li {
+  text-align: center;
+}
+
+.services a {
+  display: block;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
 }
