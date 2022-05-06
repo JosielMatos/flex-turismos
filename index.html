@@ -28,7 +28,7 @@
             Turismos
           </h1>
           <p>O melhor serviço para você!</p>
-          <a href="#"><button type="button">Saiba mais!</button></a>
+          <a class="know-more" href="#">Saiba mais!</a>
         </div>
 
         <div>
@@ -60,20 +60,20 @@
 
       <section id="servicos" class="services">
         <div class="container">
-          <h2>Serviços</h2>
+          <h2 class="section-title">Serviços</h2>
 
           <ul class="services-list">
-            <li>
-              <div><img src="./images/icon-2.png" alt="hospedagens" /></div>
-              <p>Hospedagens</p>
-              <a href="#">Comprar agora</a>
-            </li>
-
             <li>
               <div>
                 <img src="./images/icon-1.png" alt="pacote de viagens" />
               </div>
               <p>Pacotes de viagens</p>
+              <a href="#">Comprar agora</a>
+            </li>
+
+            <li>
+              <div><img src="./images/icon-2.png" alt="hospedagens" /></div>
+              <p>Hospedagens</p>
               <a href="#">Comprar agora</a>
             </li>
 
@@ -88,47 +88,52 @@
         </div>
       </section>
 
-      <div id="planos">
-        <div>
-          <h3>Plano 1</h3>
-          <ul>
-            <li>Suporte 24h</li>
-            <li>Serviços de quarto</li>
-            <li>Guia turístico</li>
-          </ul>
-          <a href="#">Saiba Mais!</a>
-        </div>
+      <section id="planos" class="container">
+        <h2 class="section-title">Planos</h2>
 
-        <div>
-          <h3>Plano 2</h3>
-          <ul>
-            <li>Suporte 24h</li>
-            <li>Serviços de quarto</li>
-            <li>Guia turístico</li>
-            <li>Roteiro de trilhas</li>
-            <li>Serviço personalizado</li>
-          </ul>
-          <a href="#">Saiba Mais!</a>
-        </div>
+        <ul class="plans-list">
+          <li>
+            <h3>Plano 1</h3>
+            <ul>
+              <li>Suporte 24h</li>
+              <li>Serviços de quarto</li>
+              <li>Guia turístico</li>
+            </ul>
+            <a class="know-more" href="#">Saiba mais!</a>
+          </li>
 
-        <div>
-          <h3>Plano 3</h3>
-          <ul>
-            <li>Suporte 24h</li>
-            <li>Serviços de quarto</li>
-            <li>Guia turístico</li>
-            <li>Roteiro de trilhas</li>
-            <li>Serviço personalizado</li>
-            <li>Área Vip</li>
-          </ul>
-          <a href="#">Saiba Mais!</a>
-        </div>
-      </div>
+          <li>
+            <h3>Plano 2</h3>
+            <ul>
+              <li>Suporte 24h</li>
+              <li>Serviços de quarto</li>
+              <li>Guia turístico</li>
+              <li>Roteiro de trilhas</li>
+            </ul>
+            <a class="know-more" href="#">Saiba mais!</a>
+          </li>
+
+          <li>
+            <h3>Plano 3</h3>
+            <ul>
+              <li>Suporte 24h</li>
+              <li>Serviços de quarto</li>
+              <li>Guia turístico</li>
+              <li>Roteiro de trilhas</li>
+              <li>Serviço personalizado</li>
+              <li>Área Vip</li>
+            </ul>
+            <a class="know-more" href="#">Saiba mais!</a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; 2021 CSS Flexbox</p>
-      <p>Desenvolvido por: Josiel Matos</p>
+      <div class="container">
+        <p>&copy; 2022 CSS Flexbox</p>
+        <p>Desenvolvido por: <span>Josiel Matos</span></p>
+      </div>
     </footer>
   </body>
 </html>
