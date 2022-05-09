@@ -23,6 +23,11 @@ header {
   padding: 0 1.25rem;
 }
 
+header h2, h1 {
+  font-size: 3rem;
+  color: #122A57;
+}
+
 header ul li + li {
   margin-left: 1.25rem;
 }
@@ -37,6 +42,7 @@ header ul li + li {
   justify-content: space-between;
   
 }
+
 
 .heading a {
   color: white;
@@ -55,15 +61,13 @@ header ul li + li {
   justify-content: space-between;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #122A57;
+.hero p {
+  margin-bottom: 0.5rem;
 }
 
 .know-more {
   display: block;
   width: 12rem;
-  margin-top: 0.5rem;
   font-size: 1rem;
   background-color: #122A57;
   text-align: center;
@@ -75,13 +79,18 @@ h1 {
 }
 
 .description {
-  height: 28rem;
+  min-height: 28rem;
   display: flex;
   align-items: center;
 }
 
-.description img {
-  min-width: 31.25rem;
+.description .img-balcao {
+  width: 100%;
+}
+
+
+.img-balcao img {
+  width: 100%;
 }
 
 #quem-somos {
@@ -190,7 +199,7 @@ h1 {
 .plans-list > li ul {
   list-style: square;
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .plans-list a {
@@ -216,6 +225,14 @@ footer span {
 /* Mobile */
 
 @media(max-width: 992px) {
+  header {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    display: none;
+  }
+
   .heading {
     height: 6rem;
     flex-direction: column;
@@ -223,11 +240,24 @@ footer span {
 
   .hero {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .hero a {
+    margin: 0 auto;
   }
 
   .description {
     flex-direction: column;
-    min-height: 42rem;
+  }
+
+  .description p + p {
+    margin-bottom: 2rem;
   }
 
   .services-list {
@@ -246,6 +276,7 @@ footer span {
 
 @media(max-width: 760px) {
   .plans-list {
+    margin-top: 1.25rem;
     min-height: 75rem;
     align-items: center;
     flex-direction: column;
